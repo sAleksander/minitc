@@ -1,0 +1,63 @@
+﻿<UserControl x:Class="MiniTC.PanelTC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MiniTC"
+             Background="White"
+             mc:Ignorable="d" Height="500" Width="500">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <!-- 20 -->
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <!-- 30 -->
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2" Grid.RowSpan="1" Content="Path:" FontSize="15" VerticalAlignment="Center" />
+        <TextBox x:Name="fullPath" IsReadOnly="True" Grid.Column="3" Grid.Row="1" Grid.ColumnSpan="16" Grid.RowSpan="1" FontSize="15" VerticalAlignment="Center" />
+
+        <Label  Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="2" Grid.RowSpan="1" Content="Drive:" FontSize="15" VerticalAlignment="Center" />
+        <ComboBox x:Name="allPaths" SelectionChanged="AllPaths_SelectionChanged" Grid.Column="3" Grid.Row="3" Grid.ColumnSpan="4" Grid.RowSpan="1" FontSize="15" VerticalAlignment="Center" />
+
+        <ListBox x:Name="itemsList" SelectionChanged="ItemsList_SelectionChanged" MouseDoubleClick="ItemsList_MouseDoubleClick" Grid.Column="1" Grid.Row="4" Grid.ColumnSpan="18" Grid.RowSpan="14" FontSize="15" VerticalAlignment="Center" Height="343"  />
+    </Grid>
+</UserControl>
